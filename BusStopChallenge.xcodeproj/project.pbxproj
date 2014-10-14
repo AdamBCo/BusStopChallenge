@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66BB3DB319EDA25E00979141 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DB219EDA25E00979141 /* main.m */; };
+		66BB3DB619EDA25E00979141 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DB519EDA25E00979141 /* AppDelegate.m */; };
+		66BB3DB919EDA25E00979141 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DB819EDA25E00979141 /* ViewController.m */; };
+		66BB3DBC19EDA25E00979141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BB3DBA19EDA25E00979141 /* Main.storyboard */; };
+		66BB3DBE19EDA25E00979141 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66BB3DBD19EDA25E00979141 /* Images.xcassets */; };
+		66BB3DC119EDA25E00979141 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BB3DBF19EDA25E00979141 /* LaunchScreen.xib */; };
+		66BB3DCD19EDA25E00979141 /* BusStopChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DCC19EDA25E00979141 /* BusStopChallengeTests.m */; };
+		66BB3DD819EDA39F00979141 /* BusStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DD719EDA39F00979141 /* BusStop.m */; };
+		66BB3DDA19EDA54100979141 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BB3DD919EDA54100979141 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66BB3DC719EDA25E00979141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66BB3DA519EDA25E00979141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66BB3DAC19EDA25E00979141;
+			remoteInfo = BusStopChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66BB3DAD19EDA25E00979141 /* BusStopChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusStopChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66BB3DB119EDA25E00979141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66BB3DB219EDA25E00979141 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66BB3DB419EDA25E00979141 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		66BB3DB519EDA25E00979141 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66BB3DB719EDA25E00979141 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		66BB3DB819EDA25E00979141 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		66BB3DBB19EDA25E00979141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66BB3DBD19EDA25E00979141 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		66BB3DC019EDA25E00979141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		66BB3DC619EDA25E00979141 /* BusStopChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusStopChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66BB3DCB19EDA25E00979141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66BB3DCC19EDA25E00979141 /* BusStopChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusStopChallengeTests.m; sourceTree = "<group>"; };
+		66BB3DD619EDA39F00979141 /* BusStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStop.h; sourceTree = "<group>"; };
+		66BB3DD719EDA39F00979141 /* BusStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStop.m; sourceTree = "<group>"; };
+		66BB3DD919EDA54100979141 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66BB3DAA19EDA25E00979141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BB3DDA19EDA54100979141 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BB3DC319EDA25E00979141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66BB3DA419EDA25E00979141 = {
+			isa = PBXGroup;
+			children = (
+				66BB3DD919EDA54100979141 /* MapKit.framework */,
+				66BB3DAF19EDA25E00979141 /* BusStopChallenge */,
+				66BB3DC919EDA25E00979141 /* BusStopChallengeTests */,
+				66BB3DAE19EDA25E00979141 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66BB3DAE19EDA25E00979141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66BB3DAD19EDA25E00979141 /* BusStopChallenge.app */,
+				66BB3DC619EDA25E00979141 /* BusStopChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66BB3DAF19EDA25E00979141 /* BusStopChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				66BB3DB419EDA25E00979141 /* AppDelegate.h */,
+				66BB3DB519EDA25E00979141 /* AppDelegate.m */,
+				66BB3DB719EDA25E00979141 /* ViewController.h */,
+				66BB3DB819EDA25E00979141 /* ViewController.m */,
+				66BB3DD619EDA39F00979141 /* BusStop.h */,
+				66BB3DD719EDA39F00979141 /* BusStop.m */,
+				66BB3DBA19EDA25E00979141 /* Main.storyboard */,
+				66BB3DBD19EDA25E00979141 /* Images.xcassets */,
+				66BB3DBF19EDA25E00979141 /* LaunchScreen.xib */,
+				66BB3DB019EDA25E00979141 /* Supporting Files */,
+			);
+			path = BusStopChallenge;
+			sourceTree = "<group>";
+		};
+		66BB3DB019EDA25E00979141 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66BB3DB119EDA25E00979141 /* Info.plist */,
+				66BB3DB219EDA25E00979141 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66BB3DC919EDA25E00979141 /* BusStopChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				66BB3DCC19EDA25E00979141 /* BusStopChallengeTests.m */,
+				66BB3DCA19EDA25E00979141 /* Supporting Files */,
+			);
+			path = BusStopChallengeTests;
+			sourceTree = "<group>";
+		};
+		66BB3DCA19EDA25E00979141 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66BB3DCB19EDA25E00979141 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66BB3DAC19EDA25E00979141 /* BusStopChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66BB3DD019EDA25E00979141 /* Build configuration list for PBXNativeTarget "BusStopChallenge" */;
+			buildPhases = (
+				66BB3DA919EDA25E00979141 /* Sources */,
+				66BB3DAA19EDA25E00979141 /* Frameworks */,
+				66BB3DAB19EDA25E00979141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusStopChallenge;
+			productName = BusStopChallenge;
+			productReference = 66BB3DAD19EDA25E00979141 /* BusStopChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66BB3DC519EDA25E00979141 /* BusStopChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66BB3DD319EDA25E00979141 /* Build configuration list for PBXNativeTarget "BusStopChallengeTests" */;
+			buildPhases = (
+				66BB3DC219EDA25E00979141 /* Sources */,
+				66BB3DC319EDA25E00979141 /* Frameworks */,
+				66BB3DC419EDA25E00979141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66BB3DC819EDA25E00979141 /* PBXTargetDependency */,
+			);
+			name = BusStopChallengeTests;
+			productName = BusStopChallengeTests;
+			productReference = 66BB3DC619EDA25E00979141 /* BusStopChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66BB3DA519EDA25E00979141 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Adam Cooper";
+				TargetAttributes = {
+					66BB3DAC19EDA25E00979141 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					66BB3DC519EDA25E00979141 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 66BB3DAC19EDA25E00979141;
+					};
+				};
+			};
+			buildConfigurationList = 66BB3DA819EDA25E00979141 /* Build configuration list for PBXProject "BusStopChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66BB3DA419EDA25E00979141;
+			productRefGroup = 66BB3DAE19EDA25E00979141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66BB3DAC19EDA25E00979141 /* BusStopChallenge */,
+				66BB3DC519EDA25E00979141 /* BusStopChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66BB3DAB19EDA25E00979141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BB3DBC19EDA25E00979141 /* Main.storyboard in Resources */,
+				66BB3DC119EDA25E00979141 /* LaunchScreen.xib in Resources */,
+				66BB3DBE19EDA25E00979141 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BB3DC419EDA25E00979141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66BB3DA919EDA25E00979141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BB3DD819EDA39F00979141 /* BusStop.m in Sources */,
+				66BB3DB919EDA25E00979141 /* ViewController.m in Sources */,
+				66BB3DB619EDA25E00979141 /* AppDelegate.m in Sources */,
+				66BB3DB319EDA25E00979141 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BB3DC219EDA25E00979141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BB3DCD19EDA25E00979141 /* BusStopChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66BB3DC819EDA25E00979141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66BB3DAC19EDA25E00979141 /* BusStopChallenge */;
+			targetProxy = 66BB3DC719EDA25E00979141 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66BB3DBA19EDA25E00979141 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66BB3DBB19EDA25E00979141 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66BB3DBF19EDA25E00979141 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66BB3DC019EDA25E00979141 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66BB3DCE19EDA25E00979141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66BB3DCF19EDA25E00979141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66BB3DD119EDA25E00979141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BusStopChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		66BB3DD219EDA25E00979141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BusStopChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		66BB3DD419EDA25E00979141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BusStopChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusStopChallenge.app/BusStopChallenge";
+			};
+			name = Debug;
+		};
+		66BB3DD519EDA25E00979141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BusStopChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusStopChallenge.app/BusStopChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66BB3DA819EDA25E00979141 /* Build configuration list for PBXProject "BusStopChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66BB3DCE19EDA25E00979141 /* Debug */,
+				66BB3DCF19EDA25E00979141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66BB3DD019EDA25E00979141 /* Build configuration list for PBXNativeTarget "BusStopChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66BB3DD119EDA25E00979141 /* Debug */,
+				66BB3DD219EDA25E00979141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66BB3DD319EDA25E00979141 /* Build configuration list for PBXNativeTarget "BusStopChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66BB3DD419EDA25E00979141 /* Debug */,
+				66BB3DD519EDA25E00979141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66BB3DA519EDA25E00979141 /* Project object */;
+}
