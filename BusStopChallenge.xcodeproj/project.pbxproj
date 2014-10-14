@@ -14,8 +14,8 @@
 		66BB3DBE19EDA25E00979141 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66BB3DBD19EDA25E00979141 /* Images.xcassets */; };
 		66BB3DC119EDA25E00979141 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BB3DBF19EDA25E00979141 /* LaunchScreen.xib */; };
 		66BB3DCD19EDA25E00979141 /* BusStopChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DCC19EDA25E00979141 /* BusStopChallengeTests.m */; };
-		66BB3DD819EDA39F00979141 /* BusStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DD719EDA39F00979141 /* BusStop.m */; };
 		66BB3DDA19EDA54100979141 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BB3DD919EDA54100979141 /* MapKit.framework */; };
+		66BB3DDD19EDB0B700979141 /* BusStopAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DDC19EDB0B700979141 /* BusStopAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +42,9 @@
 		66BB3DC619EDA25E00979141 /* BusStopChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusStopChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BB3DCB19EDA25E00979141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66BB3DCC19EDA25E00979141 /* BusStopChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusStopChallengeTests.m; sourceTree = "<group>"; };
-		66BB3DD619EDA39F00979141 /* BusStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStop.h; sourceTree = "<group>"; };
-		66BB3DD719EDA39F00979141 /* BusStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStop.m; sourceTree = "<group>"; };
 		66BB3DD919EDA54100979141 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		66BB3DDB19EDB0B700979141 /* BusStopAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopAnnotation.h; sourceTree = "<group>"; };
+		66BB3DDC19EDB0B700979141 /* BusStopAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +92,8 @@
 				66BB3DB519EDA25E00979141 /* AppDelegate.m */,
 				66BB3DB719EDA25E00979141 /* ViewController.h */,
 				66BB3DB819EDA25E00979141 /* ViewController.m */,
-				66BB3DD619EDA39F00979141 /* BusStop.h */,
-				66BB3DD719EDA39F00979141 /* BusStop.m */,
+				66BB3DDB19EDB0B700979141 /* BusStopAnnotation.h */,
+				66BB3DDC19EDB0B700979141 /* BusStopAnnotation.m */,
 				66BB3DBA19EDA25E00979141 /* Main.storyboard */,
 				66BB3DBD19EDA25E00979141 /* Images.xcassets */,
 				66BB3DBF19EDA25E00979141 /* LaunchScreen.xib */,
@@ -228,7 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66BB3DD819EDA39F00979141 /* BusStop.m in Sources */,
+				66BB3DDD19EDB0B700979141 /* BusStopAnnotation.m in Sources */,
 				66BB3DB919EDA25E00979141 /* ViewController.m in Sources */,
 				66BB3DB619EDA25E00979141 /* AppDelegate.m in Sources */,
 				66BB3DB319EDA25E00979141 /* main.m in Sources */,
@@ -422,6 +422,7 @@
 				66BB3DD219EDA25E00979141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66BB3DD319EDA25E00979141 /* Build configuration list for PBXNativeTarget "BusStopChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +431,7 @@
 				66BB3DD519EDA25E00979141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
