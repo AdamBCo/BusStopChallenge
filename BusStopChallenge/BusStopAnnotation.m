@@ -23,6 +23,14 @@
 -(NSNumber *) iDNumber{
     return json[@"_id"];
 }
+
+-(BOOL)paceCompliant{
+    if (!json[@"inter_modal"]) {
+        return NO;
+    }
+    return YES;
+}
+
 -(NSNumber *)uUID{
     return json [@"_uuid"];
 }
@@ -41,7 +49,7 @@
 -(NSString *)busDirection{
     return json [@"direction"];
 }
--(NSMutableArray *)routes{
+-(NSString *)routes{
     return json [@"routes"];
 }
 -(NSNumber *) wardNumber{
@@ -62,6 +70,23 @@
 -(NSString *)title{
     return self.cTAStopName;
 }
+
+-(NSString *)subtitle{
+    NSString *routes = [@"Routes: " stringByAppendingString:[self routes]];
+    return routes;
+
+}
+
+-(UIImage *)iconImage{
+    if (self.paceCompliant == YES){
+        return [UIImage imageNamed:@"cta_logo"];
+        
+    }
+    return [UIImage imageNamed:@"cta_logo"];
+}
+
+
+
 
 
 @end

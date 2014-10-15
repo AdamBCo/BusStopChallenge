@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>20A8E4F8-4B39-4CD1-84E2-2C9CFC3AB3A2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BusStopChallenge</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E6AC902E5974376A62A067355601CA882125A9EA</key>
+		<string>https://github.com/AdamBCo/BusStopChallenge.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BusStopChallenge.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E6AC902E5974376A62A067355601CA882125A9EA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/AdamBCo/BusStopChallenge.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E6AC902E5974376A62A067355601CA882125A9EA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E6AC902E5974376A62A067355601CA882125A9EA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BusStopChallenge</string>
+		</dict>
+	</array>
+</dict>
+</plist>

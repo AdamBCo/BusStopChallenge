@@ -10,12 +10,13 @@
 		66BB3DB319EDA25E00979141 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DB219EDA25E00979141 /* main.m */; };
 		66BB3DB619EDA25E00979141 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DB519EDA25E00979141 /* AppDelegate.m */; };
 		66BB3DB919EDA25E00979141 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DB819EDA25E00979141 /* ViewController.m */; };
-		66BB3DBC19EDA25E00979141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BB3DBA19EDA25E00979141 /* Main.storyboard */; };
 		66BB3DBE19EDA25E00979141 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66BB3DBD19EDA25E00979141 /* Images.xcassets */; };
 		66BB3DC119EDA25E00979141 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BB3DBF19EDA25E00979141 /* LaunchScreen.xib */; };
 		66BB3DCD19EDA25E00979141 /* BusStopChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DCC19EDA25E00979141 /* BusStopChallengeTests.m */; };
 		66BB3DDA19EDA54100979141 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BB3DD919EDA54100979141 /* MapKit.framework */; };
 		66BB3DDD19EDB0B700979141 /* BusStopAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DDC19EDB0B700979141 /* BusStopAnnotation.m */; };
+		66BB3DE019EDCFC600979141 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB3DDF19EDCFC600979141 /* DetailViewController.m */; };
+		66BB3DE219EE37C500979141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BB3DE119EE37C500979141 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 		66BB3DB519EDA25E00979141 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		66BB3DB719EDA25E00979141 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		66BB3DB819EDA25E00979141 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		66BB3DBB19EDA25E00979141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66BB3DBD19EDA25E00979141 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		66BB3DC019EDA25E00979141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		66BB3DC619EDA25E00979141 /* BusStopChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusStopChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +45,9 @@
 		66BB3DD919EDA54100979141 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		66BB3DDB19EDB0B700979141 /* BusStopAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopAnnotation.h; sourceTree = "<group>"; };
 		66BB3DDC19EDB0B700979141 /* BusStopAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopAnnotation.m; sourceTree = "<group>"; };
+		66BB3DDE19EDCFC600979141 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		66BB3DDF19EDCFC600979141 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		66BB3DE119EE37C500979141 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +95,11 @@
 				66BB3DB519EDA25E00979141 /* AppDelegate.m */,
 				66BB3DB719EDA25E00979141 /* ViewController.h */,
 				66BB3DB819EDA25E00979141 /* ViewController.m */,
+				66BB3DDE19EDCFC600979141 /* DetailViewController.h */,
+				66BB3DE119EE37C500979141 /* Main.storyboard */,
+				66BB3DDF19EDCFC600979141 /* DetailViewController.m */,
 				66BB3DDB19EDB0B700979141 /* BusStopAnnotation.h */,
 				66BB3DDC19EDB0B700979141 /* BusStopAnnotation.m */,
-				66BB3DBA19EDA25E00979141 /* Main.storyboard */,
 				66BB3DBD19EDA25E00979141 /* Images.xcassets */,
 				66BB3DBF19EDA25E00979141 /* LaunchScreen.xib */,
 				66BB3DB019EDA25E00979141 /* Supporting Files */,
@@ -208,7 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66BB3DBC19EDA25E00979141 /* Main.storyboard in Resources */,
+				66BB3DE219EE37C500979141 /* Main.storyboard in Resources */,
 				66BB3DC119EDA25E00979141 /* LaunchScreen.xib in Resources */,
 				66BB3DBE19EDA25E00979141 /* Images.xcassets in Resources */,
 			);
@@ -228,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66BB3DE019EDCFC600979141 /* DetailViewController.m in Sources */,
 				66BB3DDD19EDB0B700979141 /* BusStopAnnotation.m in Sources */,
 				66BB3DB919EDA25E00979141 /* ViewController.m in Sources */,
 				66BB3DB619EDA25E00979141 /* AppDelegate.m in Sources */,
@@ -254,14 +260,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		66BB3DBA19EDA25E00979141 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				66BB3DBB19EDA25E00979141 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		66BB3DBF19EDA25E00979141 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

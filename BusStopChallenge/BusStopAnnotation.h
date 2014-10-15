@@ -16,10 +16,14 @@
 @property (readonly) NSNumber *stopID;
 @property (readonly) NSString *cTAStopName;
 @property (readonly) NSString *busDirection;
-@property (readonly) NSMutableArray *routes;
+@property (readonly) NSString *routes;
 @property (readonly) NSNumber *wardNumber;
+@property (readonly) BOOL paceCompliant;
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (copy,nonatomic) NSString *title;
+@property (copy,nonatomic) NSString *subtitle;
+@property (readonly) UIImage *iconImage;
+
 
 -(instancetype)initWithJSONAndParse:(NSDictionary *)jSONDictionary;
 
