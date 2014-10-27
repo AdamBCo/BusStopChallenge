@@ -38,5 +38,7 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>FUCK APPLE</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 </dict>
 </plist>

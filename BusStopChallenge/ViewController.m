@@ -16,9 +16,9 @@
 @property CLLocationManager *locationManager;
 @property BusStopAnnotation *bustStop;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *mapListSegmentedController;
 @property NSMutableArray *busArray;
 @property (weak, nonatomic) IBOutlet UITableView *busStopTableView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *mapListToggleButton;
 
 @end
 
@@ -30,9 +30,12 @@
     self.locationManager = [[CLLocationManager alloc] init];
     [self.locationManager requestWhenInUseAuthorization];
     self.busArray = [NSMutableArray array];
+    [self.mapView showsUserLocation];
+    
     self.locationManager.delegate = self;
-    
-    
+    self.mapListToggleButton.image = [UIImage imageNamed:@"map_icon"];
+    self.mapListToggleButton.tag = 1;
+
     NSURL *url = [NSURL URLWithString:@"https://s3.amazonaws.com/mobile-makers-lib/bus.json"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
@@ -43,7 +46,7 @@
             BusStopAnnotation *busStopInfo = [[BusStopAnnotation alloc] initWithJSONAndParse:result];
             [self.mapView addAnnotation:busStopInfo];
             [self.busArray addObject:busStopInfo];
-            [self.mapView showAnnotations:self.mapView.annotations animated:YES];
+            NSLog(@"%@",busStopInfo.title);
         }
         [self.busStopTableView reloadData];
     }];
@@ -51,51 +54,50 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
     
+    if (annotation == self.mapView.userLocation) {
+        return nil;
+    }
+    
     MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [self.mapView dequeueReusableAnnotationViewWithIdentifier:@"MyAnnotation"];
+    annotationView.canShowCallout = YES;
+    annotationView.enabled = YES;
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    annotationView.leftCalloutAccessoryView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"cta_logo"]];
     BusStopAnnotation *myBusStop = (BusStopAnnotation *) annotation;
     
-    // If a new annotation is created
     if (annotationView == nil) {
-        
         annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:myBusStop reuseIdentifier:@"MyAnnotation"];
-        
-        // Annotation's color
         if (myBusStop.paceCompliant == YES) {
             annotationView.pinColor = MKPinAnnotationColorPurple;
         }
         else {
             annotationView.pinColor = MKPinAnnotationColorRed;
         }
-        
     }
-    annotationView.canShowCallout = YES;
-    annotationView.enabled = YES;
-    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    annotationView.leftCalloutAccessoryView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"cta_logo"]];
     return annotationView;
 }
 
+- (IBAction)onMapListToggleButtonPressed:(UIBarButtonItem *)mapViewListViewToggle {
+    
+    if(mapViewListViewToggle.tag == 0) {
+       self.mapListToggleButton.image = [UIImage imageNamed:@"map_icon"];
+        [UIView animateWithDuration:0.3 animations:^{
+            self.busStopTableView.alpha = 1.0;
+            self.mapView.alpha = 0.0;
+        }];
+        self.mapListToggleButton.tag = 1;
 
--(IBAction)indexChange:(UISegmentedControl *)segmentedControl{
-    switch (segmentedControl.selectedSegmentIndex) {
-        case 0:{
-            [UIView animateWithDuration:0.3 animations:^{
-                self.busStopTableView.alpha = 1.0;
-            }];
-            break;
-        }
-        case 1:{
-            [UIView animateWithDuration:0.3 animations:^{
-                self.busStopTableView.alpha = 0.0;
-            }];
-            break;
-        }
-        default:
-            break;
-    }
+   } else if(mapViewListViewToggle.tag == 1){
+       self.mapListToggleButton.image = [UIImage imageNamed:@"menu"];
+       [UIView animateWithDuration:0.3 animations:^{
+           self.busStopTableView.alpha = 0.0;
+           self.mapView.alpha = 1.0;
+           [self.mapView showAnnotations:self.mapView.annotations animated:YES];
+       }];
+       self.mapListToggleButton.tag = 0;
+   }
+
 }
-
-
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
     if ([view.annotation isKindOfClass:[BusStopAnnotation class]]){
@@ -103,18 +105,18 @@
     }
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(MKAnnotationView *)sender{
-    if ([segue.identifier isEqualToString:@"DetailVC"])
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"`"])
     {
+        MKAnnotationView *annotView = (MKAnnotationView*)sender;
         DetailViewController *destinationViewController = segue.destinationViewController;
-        destinationViewController.selectedBusStop = sender.annotation;
+        destinationViewController.selectedBusStop = annotView.annotation;
         [destinationViewController setModalPresentationStyle:UIModalPresentationOverCurrentContext];
     }
 }
 
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
     BusStopAnnotation *busStop = [self.busArray objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     cell.textLabel.text = busStop.title;
@@ -127,5 +129,7 @@
     return self.busArray.count;
     
 }
+
+
 
 @end

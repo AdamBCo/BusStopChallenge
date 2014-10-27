@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A386a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CeG-71-knf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CeG-71-knf">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -70,21 +70,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="hQj-28-g3W">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="jg8-A0-Xfg">
-                            <rect key="frame" x="180" y="7" width="240" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="List"/>
-                                <segment title="Map"/>
-                            </segments>
+                        <barButtonItem key="rightBarButtonItem" image="map_icon" style="plain" id="Z3b-H2-4b3">
                             <connections>
-                                <action selector="indexChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Lwh-Vl-3ng"/>
+                                <action selector="onMapListToggleButtonPressed:" destination="vXZ-lx-hvc" id="Qrh-8l-oc6"/>
                             </connections>
-                        </segmentedControl>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="busStopTableView" destination="tpJ-IZ-u7e" id="WKL-Hj-25i"/>
-                        <outlet property="mapListSegmentedController" destination="jg8-A0-Xfg" id="aJ7-qL-iXZ"/>
+                        <outlet property="mapListToggleButton" destination="Z3b-H2-4b3" id="Zqd-SB-REc"/>
                         <outlet property="mapView" destination="t3T-5k-PjZ" id="yFZ-lC-Sco"/>
                         <segue destination="vpx-pN-nDz" kind="presentation" identifier="DetailVC" modalTransitionStyle="crossDissolve" id="eRT-hZ-Teu"/>
                     </connections>
@@ -274,6 +268,7 @@
     <resources>
         <image name="bus_photo" width="1256" height="834"/>
         <image name="cta_logo_large" width="150" height="150"/>
+        <image name="map_icon" width="32" height="32"/>
         <image name="pace_logo" width="110" height="39"/>
     </resources>
 </document>
